@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf+8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>David Goolsby Standup</title>
+    <!--
+    David Goolsby Standup
+    Fileneame: index.html
+
+    Author: Goolsby Media
+    Date: 10/6/19
+    -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            document.getElementById("overlay-menu").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+            document.getElementById("overlay-menu").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</head>
+<center><header>
+        <nav id="navbar" class="topnav">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#podcast">PODCAST</a></li>
+                <li><a href="#dates">DATES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav id="overlay-menu">
+            <div id="overlay">
+                <ol>
+                    <li id="menuClose"><a href="#home">HOME</a></li>
+                    <li id="videoClose"><a href="#videos">VIDEOS</a></li>
+                    <li id="podcastClose"><a href="#podcast">PODCAST</a></li>
+                    <li id="datesClose"><a href="#dates">DATES</a></li>
+                    <li id="contactClose"><a href="#contact">CONTACT</a></li>
+                </ol>
+            </div>
+            <img src="hamburger.png" id="ham" width="35px" height="30px">
+        </nav>
+    <script>
+        var overlay = document.getElementById('overlay');
+        var menuClose = document.getElementById('menuClose');
+        
+        document.getElementById('ham').addEventListener('click', function(){
+            overlay.classList.add('showMenu');
+        });
+         document.getElementById('menuClose').addEventListener('click', function(){
+            overlay.classList.remove('showMenu');
+        });
+        document.getElementById('videoClose').addEventListener('click', function(){
+            overlay.classList.remove('showMenu');
+        });
+        document.getElementById('podcastClose').addEventListener('click', function(){
+            overlay.classList.remove('showMenu');
+        });
+        document.getElementById('datesClose').addEventListener('click', function(){
+            overlay.classList.remove('showMenu');
+        });
+        document.getElementById('contactClose').addEventListener('click', function(){
+            overlay.classList.remove('showMenu');
+        });
+        
+    </script>
+</header></center>
+<body>
+ 
+    <div id="home">
+        <div class="home-text">
+            <p id="name">David Goolsby</p>
+            <p id="job">Comedian</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/DavidGoolsbyComedy" target="_blank"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" width="64px"></a>
+            <a href="https://www.instagram.com/goowapwitdaoowap" target="_blank"><img src="https://img.icons8.com/cotton/64/000000/instagram.png"></a>
+            <a href="https://www.twitter.com/David_Goolsby" target="_blank"><img src="https://img.icons8.com/color/64/000000/twitter-circled.png" width="64px"></a>
+        </div>
+    </div>
+    <div id="videos">
+        <center><h1>Videos</h1></center>
+        <div id="vid-content">
+        <center>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/teOsSgNsc18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e4RRZyuOKBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </center>
+        <center><p>More content coming soon!</p></center>
+        </div>
+    </div>
+    <div id="podcast">
+        <center>
+        <iframe width="100%" height="800" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/283251738&color=%23797979&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </center>
+    </div>
+    <div id="dates">
+        <div id="date-text">
+        <center><p>Dates to be announced soon!<p></center>
+        </div>
+    </div>
+    <div id="contact">
+        <center>
+            <h1>Contact</h1>
+            <br>
+            <p>David Goolsby</p>
+            <a href="mailto:davidgoolsbystandup@gmail.com">davidgoolsbystandup@gmail.com</a>
+            <p>Off The Cuff</p>
+            <a href="mailto:podcastoffthecuff@gmail.com">podcastoffthecuff@gmail.com</a>
+        </center>
+    
+    
+    </div>
+
+    
+</body>
+    

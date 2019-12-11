@@ -1,0 +1,222 @@
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+    background-size: cover;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+}
+header {
+    align-content: center;
+    height: 0px;
+}
+h1 {
+    margin-top: 0;
+    width: 75%;
+    height: 30px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+#overlay {
+    transform: scaleY(0);
+    transform-origin: top;
+    color: white;
+    background-color: darkgray;
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50px;
+}
+#overlay ol {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 5%;
+}
+#overlay ol li {
+    margin: 5% auto 5% auto;
+}
+#overlay ol li a {
+    font-size: 2em;
+    
+    text-decoration: none;
+    color: white;
+}
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    font-family: 'Righteous', cursive;
+    background-color: darkgray;
+    z-index: 1;
+    opacity: 1;
+    transition: top 0.3s;
+}
+nav:hover{
+    opacity: 1;
+    display: block;
+}
+#home {
+    margin: 3% auto 0 auto;
+    background-image: url(Goowap.jpg);
+    background: linear-gradient(transparent,transparent, transparent, #000000, #000000), url("Goowap.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+}
+.home-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+}
+.social img {
+    transform: translate(60%, 90%);
+    display: grid;
+}
+#name {
+    font-size: 7em;
+    margin-bottom: 10px;
+}
+#job {
+    margin-top: 0px;
+    font-size: 2.5em;
+}
+#navbar {
+    transition: top 0.3s;
+    z-index: 2;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0.5% auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 80%;
+    font-size: 1.5em;
+    text-align: center;
+}
+nav ul li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+}
+#ham {
+    display: none;
+    text-align: right;
+}
+.showMenu {
+    display: block;
+    animation: slide-menu .6s ease-in forwards;  
+}
+#videos {
+    background-color: black;
+    height: 800px;
+    justify-content: center;
+}
+#vid-content {
+    margin: 7% auto 0 auto;
+    grid-template-columns: repeat(2, auto);
+    width: 90%;
+}
+#videos p {
+    margin-top: 150px;
+    color: white;
+    font-size: 2em;
+}
+iframe {
+}
+h1 {
+    margin-top: 5%;
+    font-size: 3em;
+}
+#podcast {
+    height: 800px;
+    width: 100%;
+    top: 0%;
+}
+#dates {
+    margin: 0 auto 0 auto;
+    height: 800px;
+    background-image: url(Goowap2.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    color: white;
+    display: block;
+    text-align: center;
+}
+#date-text {
+    transform: translate(0%, 500%);
+    font-size: 4em;
+}
+#contact {
+    height: 400px;
+    background-color: black;
+    background-size: cover;
+}
+#contact h1 {
+    margin-top: 40px; 
+}
+#contact p {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+#contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+@keyframes slide-menu {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+@media screen and (max-width:800px) {
+    #navbar {
+        display: none;
+    }
+    #overlay-menu {
+        display: block;
+    }
+    #ham {
+        margin-top: 8px;
+        display: block;
+        margin-left: 92%;
+    }
+    .showMenu {
+    display: block;
+    animation: slide-menu .6s ease-in forwards;  
+    }
+    @keyframes slide-menu {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+    .social img {
+    transform: translate(1000%, 90%);
+    display: grid;
+}
+}
+@media screen and (max-width:600px) {
+   
+}

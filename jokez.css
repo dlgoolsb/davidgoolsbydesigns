@@ -1,0 +1,159 @@
+html {
+    background-color: #00aeef;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "custom";
+    src: url("pop.ttf");
+}
+nav {
+    height: 150px;
+    width: 100%;
+    color: white
+    font-size: 1.75em;
+    font-family: 'custom', Ariel, sans-serif;
+    text-decoration: none;
+    opacity: 1;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-grid;
+    grid-template-columns: repeat(6, auto);
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+}
+nav ul li a {
+    margin-top: 50px;
+    display: grid;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    font-size: 1.75em;
+    font-family: 'custom', Ariel, sans-serif;
+}
+nav ul li a:hover {
+    background-color: #bf1e2d;
+    padding: 3px;
+    color: black;
+    transform: scale(1.2);
+}
+#nav-logo {
+    margin-top: -50px;
+}
+#logo:hover {
+    background-color: none;
+    padding: 0;
+    transform: scale(1.1);
+}
+#nav-logo:hover {
+    background-color: none;
+}
+#history {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#mission {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#spotlight {
+    background-color: #ffffff;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#spotlight iframe {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#picks {
+    background-color: #00aeef;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#picks iframe {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#music-vid {
+    background-color: black;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#music-vid iframe {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+#feed {
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+}
+#feed iframe {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#comedy {
+    background-color: #00aeef;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+#comedy iframe {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+#contact {
+    background-color: #bf1e2d;
+    width: 75%;
+}
+#contact h3 {
+    color: white;
+    font-family: 'custom', Ariel, sans-serif;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+#contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+#social {
+    display: inline-block;
+}
+h1 {
+    font-family: 'custom', Ariel, sans-serif;
+    color: black;
+    font-size: 3em;
+    background-color: #bf1e2d;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+h2 {
+   font-family: 'custom', Ariel, sans-serif;
+    color: black;
+    font-size: 3em;
+    background-color: darkgray;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+p {
+    color: white;
+    font-size: 1.1em;
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf+8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<link rel="stylesheet" href="workstyle.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>David Goolsby</title>
+    <!--
+    Personal Web Portfolio
+    Fileneame: work.html
+
+    Author: Goolsby Media
+    Date: 12/4/19
+    -->
+    <script>
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+</head>
+<header>
+    <center>
+    <nav id="mainnav">
+        <ul>
+            <li><a href=index.html>Home</a></li>
+            <li><a href=work.html>Work</a></li>
+            <li><a href=contact.html>Contact</a></li>
+            <li><a href=bio.html>Why I Do</a></li>
+        </ul>
+    </nav>
+    </center>
+</header>
+<body>
+    <button id="myBtn"><a href="#mainnav">Back To Top</a></button>
+
+    <center>
+    <nav id="worknav">
+        <ul>
+            <li><a href="#motion">MOTION GRAPHICS / VIDEOS</a></li>
+            <li><a href="#comics">COMICS/CHARACTER DESIGN</a></li>
+            <li><a href="#concept">CONCEPT DESIGN</a></li>
+            <li><a href="#web">WEB DESIGN</a></li>
+        </ul>    
+    </nav>
+    </center>
+    <div id="all">
+    <div id="motion">
+        <center>
+        <h1>Motion Graphics / Videos</h1>
+        <video id="robo" controls height="300px">
+            <source src="RoboSphere.mp4" type="video/mp4">
+            <source src="RoboSphere.ogg" type="video/ogg">
+        </video>
+        <img src="ManOfMotion.gif" height="300px">
+        <img src="LandingV3Final1.gif" height="300px">
+        <video controls height="300px">
+            <source src="SelfPromoFinal1.mp4" type="video/mp4">
+            <source src="SelfPromoFinal1.ogg" type="video/ogg">
+        </video>
+        
+    </center>
+    </div>
+    <br>
+    <br>
+    <div id="comics">
+        <center>
+        <h1>Comics / Character Design</h1>
+            <img src="Faith%20of%20a%20mustard%20seed.PNG" width="30%">
+            <img src="Web%20design%20panels.png" height="420px">
+            <img src="Erwin-You're-Fat.png" height="200px">
+            <img src="Barry%20Sketch.JPG" height="420px">
+            <img src="Goowap%20Sketch.png" height="420px">
+         
+        </center>
+    </div>
+    <br>
+    <br>
+    <div id="concept">
+        <center>
+        <h1>Concept Design</h1>
+        <img src="Ad-Men.png" width="400px">
+        <img src="Cousins1.png" width="400px">
+        <img src="Cousins2.png" width="400px">
+        
+        </center>
+    </div>
+    <br>
+    <br>
+    <div id="web">
+        <center>
+            <h1>Web Design</h1>
+            <img src="standup.png" height="400px">
+            <figcaption><a href="comedy.html" target="_blank">Standup Website</a></figcaption>
+            <br>
+            <br>
+            <img src="jokez.png" height="400px">
+            <figcaption><a href="jokez.html" target="_blank">Jokez N Jamz</a></figcaption>
+        </center>
+    </div>
+    </div>
+</body>
